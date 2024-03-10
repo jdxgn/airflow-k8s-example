@@ -1,0 +1,13 @@
+bases:
+ - "../bases/environments.yaml"
+ - "../bases/repositories.yaml"
+
+releases:
+  - name: "airflow"
+    namespace: "base"
+    createNamespace: true
+    chart: "airflow/airflow"
+    labels:
+      chart: "airflow"
+      repo: "airflow"
+      namespace: "airflow"

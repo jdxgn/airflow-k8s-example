@@ -1,0 +1,13 @@
+bases:
+  - "infrastructure/helm/bases/repositories.yaml"
+
+helmfiles:
+  - "infrastructure/helm/releases/releases.yaml"
+
+helmDefaults:
+  atomic: true 
+  createNamespace: true        
+  cleanupOnFail: true  
+  verify: true
+  timeout: 300
+  wait: true
